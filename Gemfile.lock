@@ -51,9 +51,6 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
-    jbuilder (2.4.1)
-      activesupport (>= 3.0.0, < 5.1)
-      multi_json (~> 1.2)
     json (1.8.3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
@@ -64,7 +61,6 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.0.0)
     minitest (5.9.0)
-    multi_json (1.12.1)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     rack (1.6.4)
@@ -115,7 +111,6 @@ PLATFORMS
 DEPENDENCIES
   dotenv-rails
   factory_girl_rails (~> 4.0)
-  jbuilder (~> 2.0)
   rails (= 4.2.4)
   spring
   sqlite3
