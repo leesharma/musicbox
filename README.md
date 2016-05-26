@@ -10,7 +10,7 @@ This app has a basic API with two endpoints:
 Download the app/clone it locally and run `bin/setup` to set it up. To run the
 tests, run `rake test`. If those all pass, run `rails server` to start the server.
 
-### POST /api/v1
+### POST /api/v1/feedback
 
 Example Data: *(requires message and valid user_id)*
 ```json
