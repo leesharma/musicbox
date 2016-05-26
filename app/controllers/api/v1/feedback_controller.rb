@@ -16,7 +16,7 @@ module API::V1
 
     # Protects against mass-assignment attacks by whitelisting params
     def secure_params
-      params.require(:feedback).permit(:message)
+      params.require(:feedback).permit(:message, :user_id)
     end
   end
 end
