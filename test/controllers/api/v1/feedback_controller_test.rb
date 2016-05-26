@@ -29,4 +29,12 @@ class API::V1::FeedbackControllerTest < ActionController::TestCase
     post_feedback(message: false)
     assert_response :unprocessable_entity
   end
+
+  test 'create with invalid data should respond with error messages' do
+    post_feedback(message: false)
+    expected = { 'message' => ["can't be blank"] }
+    subject = JSON.parse @response.body
+
+    assert_equal expected, subject
+  end
 end

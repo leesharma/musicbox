@@ -10,9 +10,15 @@ module Musicbox
   class Application < Rails::Application
     config.active_record.raise_in_transactional_callbacks = true
 
+    # Use JSON exceptions
+    config.exceptions_app = self.routes
+
+    # Disable unneeded generators
     config.generators do |generate|
-      generate.helpers false
+      generate.helper false
       generate.assets false
+      generate.test_framework :test_unit, fixture: false
+      generate.template_engine false
     end
   end
 end
